@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<config xmlns="http://zanata.org/namespace/config/">
+  <url>http://localhost:8080/zanata/</url>
+  <project>hatter</project>
+  <project-version>1.0</project-version>
+
+  <locales>
+    <locale>de</locale>
+    <locale>ja</locale>
+    <locale>zh</locale>
+    <locale>ru</locale>
+  </locales>
+
+</config>
