@@ -3,6 +3,7 @@
   <url>http://localhost:8080/zanata/</url>
   <project>hatter</project>
   <project-version>1.0</project-version>
+  <project-type>gettext</project-type>
 
   <locales>
     <locale>de</locale>
@@ -10,5 +11,9 @@
     <locale>zh</locale>
     <locale>ru</locale>
   </locales>
+  
+  <python-client>
+    <dir>.</dir>
+  </python-client>
 
 </config>
