@@ -1,0 +1,29 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR David Mason
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: hatter 1.0\n"
+"Report-Msgid-Bugs-To: damason@redhat.com\n"
+"POT-Creation-Date: 2011-11-16 09:25+1000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: hatter:16
+msgid "How many hats would you like? "
+msgstr ""
+
+#: hatter:21
+msgid "That doesn't seem like a valid integer!"
+msgstr ""
+
+#: hatter:32
+msgid "done!"
+msgstr ""
