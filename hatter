@@ -1,0 +1,32 @@
+#!/usr/bin/env python
+"""Draws some hats to the console"""
+
+import os, sys
+from optparse import OptionParser
+
+usage = 'usage: invoke %prog, then enter a number when prompted'
+parser = OptionParser(usage)
+parser.add_option('-t', '--tophats',
+                  action='store_true', dest='tophats', default=False,
+                  help='draw tophats instead of fedoras')
+options, args = parser.parse_args()
+
+
+inputnum = raw_input('How many hats would you like? ')
+
+try:
+    numhats = int(inputnum)
+except ValueError:
+    print 'That doesn\'t seem like a valid integer!'
+    sys.exit(1)
+
+for hat in range(numhats):
+    if options.tophats:
+        print
+        print '   \033[31;41m||||\033[0m'
+    else:
+        print '   \033[31m_  _\033[0m'
+    print ' \033[31m__\033[41m||||\033[0;31m__\033[0m'
+print
+print 'done!'
+

@@ -1,0 +1,23 @@
+
+Hatter
+======
+
+Hatter is a simple python terminal application that prints hats to the console.
+
+Hatter exists as an example of using Zanata with some other tools
+to localise a software project.
+
+The stages in this demo are represented by git commits, so that a diff between
+commits will show you what has changed, and the commit messages should give a
+reasonable idea of what has been done.
+
+
+Usage
+-----
+
+To see all functions of hatter, try the following:
+
+    ./hatter --help
+
+Also, when prompted for a number of hats, try entering a non-integer (e.g. 'a')
+to see the error message.
