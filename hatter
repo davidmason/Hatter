@@ -10,8 +10,18 @@ parser = OptionParser(usage)
 parser.add_option('-t', '--tophats',
                   action='store_true', dest='tophats', default=False,
                   help='draw tophats instead of fedoras')
+parser.add_option('-l', '--locale',
+                  type='string', dest='locale', default='en',
+                  help='select a language to use, currently supports ja')
+
 options, args = parser.parse_args()
 
+# set up gettext
+local_path = os.path.realpath(os.path.dirname(sys.argv[0]))
+gettext.bindtextdomain('hatter', local_path)
+gettext.textdomain('hatter')
+lang = gettext.translation('hatter', local_path, [options.locale], fallback = True)
+_ = lang.gettext
 
 inputnum = raw_input(_('How many hats would you like? '))
 
