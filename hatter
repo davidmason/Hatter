@@ -1,7 +1,8 @@
 #!/usr/bin/env python
 """Draws some hats to the console"""
 
-import os, sys
+import os, sys, gettext, locale
+_ = gettext.gettext
 from optparse import OptionParser
 
 usage = 'usage: invoke %prog, then enter a number when prompted'
@@ -12,12 +13,12 @@ parser.add_option('-t', '--tophats',
 options, args = parser.parse_args()
 
 
-inputnum = raw_input('How many hats would you like? ')
+inputnum = raw_input(_('How many hats would you like? '))
 
 try:
     numhats = int(inputnum)
 except ValueError:
-    print 'That doesn\'t seem like a valid integer!'
+    print _('That doesn\'t seem like a valid integer!')
     sys.exit(1)
 
 for hat in range(numhats):
@@ -28,5 +29,5 @@ for hat in range(numhats):
         print '   \033[31m_  _\033[0m'
     print ' \033[31m__\033[41m||||\033[0;31m__\033[0m'
 print
-print 'done!'
+print _('done!')
 
